@@ -1,7 +1,6 @@
 # Личный проект «Седона»
 
 * Студент: [Руслан Гришков](https://up.htmlacademy.ru/htmlcss/14/user/236749).
-* Наставник:[Удовенко Марина](https://github.com/Leiry)
 
 ---
 
