@@ -5,8 +5,11 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="main header">
-      <div class="container">
+    <div class="wrapper">
+    <header class="main-header">
+      <div class="logo">
+         <a><img src="logo.png" alt="Sedona" width="" height=""></a>
+      </div>
         <nav class="main-navigation">
           <ul>
             <li>
@@ -23,122 +26,138 @@
             </li>
           </ul>
         </nav>
-      </div>
     </header>
-    <main class="container">
-      <div class="Welcome">
-          <p>Welcome to the gorgeous</p>
-      </div>
-      <div class="logo">
-        <h1>Sedona</h1>
-      </div>
-      <div class="slogan">
-        <p><q>Becouse the Grand Canyon sucks!</q></p>
-      </div>
-      <div class="slogan-1">
-          <p>Седона-небольшой городок в Аризоне,заслуживающий большего</p>
-      </div>
-      <div class="causes">
-        <p>Рассмотрим 5 причин,по которым Седона лучше чем Гранд Каньон!</p>
-      </div>
-      <div class="cause-1">
-        <div class="cause-1-left">
-          <h2>Настоящий городок</h2>
-          <p>-№1-</p>
-          <p>Седона-не атракцион для туристов,там течет своя жизнь</p>
+    <main class="content">
+      <div class="promo">
+        <div>
+          <img src="http://placehold.it/150x100" alt="Sedona" width="" height=""> <!--три слогана в одной картинке и как правильно назвать alt-->
         </div>
-        <div class="cause-1-right">
-          <img src="img/index.png" width="100" height="100" alt="Картинка со зданием">
+        <div>
+          <img src="http://placehold.it/150x100" width="" height=""><!--это картинка-фон, нужно ли ей указывать alt?-->
+        </div>
+        <div>
+        <img src="http://placehold.it/150x100" width="" height=""><!--белые треугольники внизу, тоже являются картинкой в promo, верно?-->
         </div>
       </div>
-      <section class="features">
-        <div class="features-services">
-          <b>Жилье</b>
-          <p>Рекомендуем пожить в настоящем отеле,все как в кино!</p>
+      <article>
+        <header class=""><!-- как лучше назвать класс этого хэдера?-->
+          <h1>Седона-небольшой городок в Аризоне,заслуживающий большего</h1>
+          <p>Рассмотрим 5 причин,по которым Седона лучше чем Гранд Каньон!</p>
+        </header>
+        <div class="reason-row">
+          <div class="reason">
+            <h2>Настоящий городок</h2>
+            <div class="number">
+              -№1-
+            </div>
+            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="reason-image">
+            <img src="img/index.png" width="" height="">
+          </div>
         </div>
-        <div class="features-services">
-          <b>Еда</b>
+        <div class="reason-row">
+          <div class="reason-icon">
+            <div class="icon-house">
+              <img src="house.png" width="" height="">
+            </div>
+            <h2>Жилье</h2>
+            <p>Рекомендуем пожить в настоящем отеле,все как в кино!</p>
+          </div>
+        </div>
+        <div class="reason-icon">
+          <div class="icon-food">
+            <img src="food.png" width="" height="">
+          </div>
+          <h2>Еда</h2>
           <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
         </div>
-        <div class="features-services">
-          <b>Сувениры</b>
+        <div class="reason-icon">
+          <div class="souvenirs-icon">
+            <img src="souvenirs.png" width="" height="">
+          </div>
+          <h2>Сувениры</h2>
           <p>Не только китайского,но и местного производства!</p>
         </div>
-      </section>
-      <div class="cause-2">
-        <div class="cause-2-left">
-            <img src="img/index.png" width="100" height="100" alt="Картинка с каньоном">
+        <div class="reason-row">
+          <div class="reason-image">
+            <img src="img/index.png" width="" height="">
           </div>
-        <div class="cause-2-right">
-          <h2>Там есть мост дьявола</h2>
-          <p>-№2-</p>
-          <p>Да,по нему можно пройти!Если,конечно,вы осмелитесь</p>
+          <div class="reason">
+            <h2>Там есть мост дьявола</h2>
+            <div class="number">
+              -№2-
+            </div>
+            <p>Да,по нему можно пройти!Если,конечно,вы осмелитесь</p>
+          </div>
         </div>
-      </div>
-      <section class="other-causes">
-        <div class="cause-3">
-          <h2>Небольшая площадь</h2>
-          <p>-№3-</p>
-          <p>Все достопримечательности находятся очень близко</p>
+        <div class="reason-row">
+          <div class="reason">
+            <h2>Небольшая площадь</h2>
+            <div>
+              -№3-
+            </div>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="reason">
+            <h2>Красивая дорога</h2>
+            <div>
+              -№4-
+            </div>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="reason">
+            <h2>Мало туристов</h2>
+            <div>
+              -№5-
+            </div>
+            <p>Большинство едет в Гранд-Каньон и толпится там</p>
+          </div>
         </div>
-        <div class="cause-4">
-          <h2>Красивая дорога</h2>
-          <p>-№4-</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </div>
-        <div class="cause-5">
-          <h2>Мало туристов</h2>
-          <p>-№5-</p>
-          <p>Большинство едет в Гранд-Каньон и толпится там</p>
-        </div>
-      </section>
-      <div class="interested-block">
-      <div class="inerested">
+      </article>
+      <div class="search">
         <h3>Заинтересовались?</h3>
-      </div>
-      <div class="best-offer">
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      </div>
-      </div>
-      <div class="booking">
-        <div class="search">
-          <p>Поиск гостиниц в Седоне</p>
-        </div>
-        <div class="date">
-          <lable>
-            Дата заезда <input type="text" name="coming-date" value="24 апреля 2016">
-          </lable><br>
-          <lable>
-            Дата выезда <input type="text" name="leave-date" value="4 июля 2016">
-          </lable><br>
-          <lable>
-            Взрослые <input type="text" name="adult" value="2">
-          </lable>
-          <lable>
-            Дети <input type="text" name="child" value="0">
-          </lable><br>
-          <!-- Вообще не имею понятия как делать подобные формы с календарем и + -,надо просвятить!))-->
-          <button class="btn" type="submit">Найти</button>
-        <div class="map">
-          <img src="img/index.png" width="100" height="100" alt="Карта">
-        </div>
+        <a href="#" class="search-btn">Поиск гостиницы в Седоне</a>
       </div>
     </main>
-    <footer class="main-footer">
-      <div class="container">
-        <section class="footer-tag">
-          <span>#Visitsedona</span>
-        </section>
-        <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-copyright">
-          <p>Website by</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
-      </div>
-    </footer>
+      <footer class="main-footer">
+        <div class="form">
+          <form action="#" method="post">
+            <div class="form-lane">
+              <label for="datacheckin">Дата заезда:<label>
+              <input type="text" name="datacheckin" id="datacheckin" value="24 апреля 2016">
+            </div>
+            <div class="form-lane">
+              <label for="datacheckout">Дата выезда:<label>
+              <input type="text" name="datacheckout" id="datacheckout" value="4 июля 2016">
+            </div>
+            <div class="form-lane">
+              <label for="adult">Взрослые </label>
+              <input type="text" name="adult" id="adult" value="2">
+              <label for="child">Дети </label>
+              <input type="text" name="child" id="child" value="0"><!--как сделать пробел между ними не очень понятно-->
+            </div>
+            <button class="btn" type="submit">Найти</button>
+        </div>
+        <div class="map">
+          <img src="map.png" width="" height="" alt="Карта">
+        </div>
+        <div class="footer-row">
+          <div class="footer-tag">
+            <a href="#" class="hashtag">#Visitsedona</a>
+          </div>
+          <div class="footer-social">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </div>
+          <div class="footer-copyright">
+            Website by
+            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

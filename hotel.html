@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <header class="main-header">
+      <div class="logo">
+         <a><img src="logo.png" alt="Sedona" width="" height=""></a>
+      </div>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <main class="content">
+      <div class="type-row"><!--название класса?-->
+        <div class="background-image">
+          <img src="house.png" width="" height="">
+        </div>
+        <div class="list">
+          <p>Инфраструктура:</p>
+          <form action="" method="">
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </form>
+        </div>
+          <div class="list">
+            <p>Тип жилья:</p>
+            <form action="" method="">
+              <ul>
+                <li>
+                  <input type="checkbox" name="hostel" id="hostel" checked>
+                  <label for="hostel">Гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="hotel" id="hotel" checked>
+                  <label for="hotel">Мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="apartments" id="apartments" checked>
+                  <label for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </form>
+          </div>
+          <div class="price">
+            <p>Стоимость в сутки(Р):</p>
+            <table>
+              <tr>
+                <form action="" method="">
+                <td>
+                  <input type="text" name="min-price" value="От 0">
+                </td>
+                <td>
+                  <input type="text" name="max-price" value="До 3000">
+                </td>
+                </form>
+              </tr>
+            </table>
+            <div>
+              СКРОЛЛ <!--скролл между таблицей и кнопкой не представляем как делать-->
+            </div>
+            <form action="" method="">
+              <button type="btn" alt="Показать">Показать</button>
+            </form>
+          </div>
+          <div class="filter-row">
+            <div class="search-results">
+              <b>Найдено:3</b><!--в какой тег обернуть это непонятно!-->
+            </div>
+            <ul>
+              <li>
+                <a href="#">По цене</a>
+              </li>
+              <li>
+                <a href="#">По типу</a>
+              </li>
+              <li>
+                <a href="#">По рейтингу</a>
+              </li>
+            </ul>
+            <div class="arrow">
+              <img src="img/index.png" width="" height=""><!--как стрелки делать не понятно тоже-->
+            </div>
+          </div>
+          <div class="hotel-row">
+            <div class="hotel-image">
+              <img src="img/index.png" width="" height="">
+            </div>
+          <div class="excerpt">
+            <h2>Amara resort & spa</h2>
+            <p>Гостиница от 3500</p><!--вряд ли тут <p>-->
+            <button class="btnblue" type="submit">Подробнее</button>
+            <button class="btngrey" type="submit">Забронировать</button><!--Или все-таки это ссылки?-->
+            <div class="stars">
+              <img src="stars.png" width="" height=""><!--вставляем картинкой,так как не знаем к чему они относятся и как их сделать правильно-->
+            </div>
+            <div class="rating">
+              Рейтинг:8.5<!--Во что обернуть этот текс,так смусловая нагрузка не ясна?-->
+            </div>
+          </div>
+          <div class="excerpt">
+            <h2>Desert quail inn</h2>
+            <p>Мотель от 2000</p>
+            <button class="btnblue" type="submit">Подробнее</button>
+            <button class="btngrey" type="submit">Забронировать</button>
+            <div class="stars">
+              <img src="stars.png" width="" height="">
+            </div>
+            <div class="rating">
+              Рейтинг:8.9
+            </div>
+          </div>
+          <div class="excerpt">
+            <h2>Villas at poco diablo</h2>
+            <p>Апартаменты от 4000</p>
+            <button class="btnblue" type="submit">Подробнее</button>
+            <button class="btngrey" type="submit">Забронировать</button>
+            <div class="stars">
+              <img src="stars.png" width="" height="">
+            </div>
+            <div class="rating">
+              Рейтинг:9.2
+            </div>
+          </div>
+    </main>
+      <footer class="main-footer">
+        <div class="footer-row">
+          <div class="footer-tag">
+            <a href="#" class="hashtag">#Visitsedona</a>
+          </div>
+          <div class="footer-social">
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </div>
+          <div class="footer-copyright">
+            Website by
+            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
