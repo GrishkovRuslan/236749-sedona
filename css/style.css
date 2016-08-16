@@ -1,0 +1,26 @@
+body {
+  font-family: "PT sans",sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: normal;
+  color:#000000;
+}
+h1 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+p {
+  font-size: 14px;
+  line-height: 21px;
+  color:#333333;
+}
+.promo {
+  background-image: url ("img/bg-photo-index.jpg");/*почему не работает изображение?*/
+  background-color:black;
+}
