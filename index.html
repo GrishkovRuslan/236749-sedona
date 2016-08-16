@@ -3,161 +3,158 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="wrapper">
-    <header class="main-header">
-      <div class="logo">
-         <a><img src="logo.png" alt="Sedona" width="" height=""></a>
-      </div>
+      <header class="main-header">
+        <div class="logo">
+          <a><img src="img/logo.png" alt="Sedona" width="" height=""></a>
+        </div>
         <nav class="main-navigation">
-          <ul>
-            <li>
+          <ul class="navigation-list">
+            <li class="navigation-item">
               <a href="#">Информация</a>
             </li>
-            <li>
+            <li class="navigation-item">
               <a href="#">Фото и видео</a>
             </li>
-            <li>
+            <li class="navigation-item">
               <a href="#">Карта штата</a>
             </li>
-            <li>
+            <li class="navigation-item">
               <a href="#">Гостиницы</a>
             </li>
           </ul>
         </nav>
-    </header>
-    <main class="content">
-      <div class="promo">
-        <div>
-          <img src="http://placehold.it/150x100" alt="Sedona" width="" height=""> <!--три слогана в одной картинке и как правильно назвать alt-->
+      </header>
+      <main class="content">
+        <div class="promo">
+          <div class="promo-image">
+            <img src="img/promo-image.png" alt="Sedona" width="" height=""> <!--черный фон для наглядности-->
+          </div>
         </div>
-        <div>
-          <img src="http://placehold.it/150x100" width="" height=""><!--это картинка-фон, нужно ли ей указывать alt?-->
-        </div>
-        <div>
-        <img src="http://placehold.it/150x100" width="" height=""><!--белые треугольники внизу, тоже являются картинкой в promo, верно?-->
-        </div>
-      </div>
-      <article>
-        <header class=""><!-- как лучше назвать класс этого хэдера?-->
-          <h1>Седона-небольшой городок в Аризоне,заслуживающий большего</h1>
-          <p>Рассмотрим 5 причин,по которым Седона лучше чем Гранд Каньон!</p>
-        </header>
-        <div class="reason-row">
-          <div class="reason">
-            <h2>Настоящий городок</h2>
-            <div class="number">
-              -№1-
+        <article>
+          <header class="header-title">
+            <h1 class="title">Седона-небольшой городок в Аризоне,заслуживающий большего!</h1><!--поставить классы как у всех для одинакового форматирования,или другой придумать?-->
+            <p class="reason-discription">Рассмотрим 5 причин,по которым Седона лучше чем Гранд Каньон!</p><!--поставить классы как у всех для одинакового форматирования,или другой придумать?-->
+          </header>
+          <div class="reason-row reason-row--blue">
+            <div class="reason">
+              <h2 class="reason-title">Настоящий городок</h2>
+              <div class="reason-number">
+                -№1-
+              </div>
+              <p class="reason-discription">Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-          </div>
-          <div class="reason-image">
-            <img src="img/index.png" width="" height="">
-          </div>
-        </div>
-        <div class="reason-row">
-          <div class="reason-icon">
-            <div class="icon-house">
-              <img src="house.png" width="" height="">
+            <div class="reason-image">
+              <img src="img/reason-image-1.jpg" width="810" height="256"><!--как вырезать кусок картики.а не всю её?-->
             </div>
-            <h2>Жилье</h2>
-            <p>Рекомендуем пожить в настоящем отеле,все как в кино!</p>
           </div>
-        </div>
-        <div class="reason-icon">
-          <div class="icon-food">
-            <img src="food.png" width="" height="">
-          </div>
-          <h2>Еда</h2>
-          <p>Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
-        </div>
-        <div class="reason-icon">
-          <div class="souvenirs-icon">
-            <img src="souvenirs.png" width="" height="">
-          </div>
-          <h2>Сувениры</h2>
-          <p>Не только китайского,но и местного производства!</p>
-        </div>
-        <div class="reason-row">
-          <div class="reason-image">
-            <img src="img/index.png" width="" height="">
-          </div>
-          <div class="reason">
-            <h2>Там есть мост дьявола</h2>
-            <div class="number">
-              -№2-
+          <div class="reason-row-icon">
+            <div class="reason-icon reason">
+              <div class="reason-icon--house"><!--немного непонятно с псевдоэлементами,так нужен тут этот див или нет все-таки,пока сделал картинками просто?-->
+                <img src="img/reason-icon--house.png">
+              </div>
+              <h2 class="reason-title">Жилье</h2>
+              <p class="reason-discription">Рекомендуем пожить в настоящем отеле,все как в кино!</p>
             </div>
-            <p>Да,по нему можно пройти!Если,конечно,вы осмелитесь</p>
+            <div class="reason-icon reason">
+              <div class="reason-icon--food">
+                <img src="img/reason-icon--food.png">
+              </div>
+              <h2 class="reason-title">Еда</h2>
+              <p class="reason-discription">Всегда заказывайте фирменный бургер,вы не разочаруетесь!</p>
+            </div>
+            <div class="reason-icon reason">
+              <div class="reason-icon--souvenirs">
+                <img src="img/reason-icon--souvenirs.png">
+              </div>
+              <h2 class="reason-title">Сувениры</h2>
+              <p class="reason-discription">Не только китайского,но и местного производства!</p>
+            </div>
           </div>
+          <div class="reason-row reason-row--blue">
+            <div class="reason-image">
+              <img src="img/reason-image-2.jpg" width="810" height="256">
+            </div>
+            <div class="reason">
+              <h2 class="reason-title">Там есть мост дьявола</h2>
+              <div class="reason-number">
+                -№2-
+              </div>
+              <p class="reason-discription">Да,по нему можно пройти!Если,конечно,вы осмелитесь</p>
+            </div>
+          </div>
+          <div class="reason-row reason-row--grey">
+            <div class="reason">
+              <h2 class="reason-title">Небольшая площадь</h2>
+              <div class="reason-number">
+                -№3-
+              </div>
+              <p class="reason-discription">Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="reason">
+              <h2 class="reason-title">Красивая дорога</h2>
+              <div class="reason-number">
+                -№4-
+              </div>
+              <p class="reason-discription">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="reason">
+              <h2 class="reason-title">Мало туристов</h2>
+              <div class="reason-number">
+                -№5-
+              </div>
+              <p class="reason-discription">Большинство едет в Гранд-Каньон и толпится там</p>
+            </div>
+          </div>
+        </article>
+        <div class="search">
+          <h2 class="question">Заинтересовались?</h2>
+          <p class="reason-discription">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a href="#" class="search-btn">Поиск гостиницы в Седоне</a><!--для <p> поставить классы как у всех для одинакового форматирования,или другой придумать?-->
         </div>
-        <div class="reason-row">
-          <div class="reason">
-            <h2>Небольшая площадь</h2>
-            <div>
-              -№3-
-            </div>
-            <p>Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="reason">
-            <h2>Красивая дорога</h2>
-            <div>
-              -№4-
-            </div>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="reason">
-            <h2>Мало туристов</h2>
-            <div>
-              -№5-
-            </div>
-            <p>Большинство едет в Гранд-Каньон и толпится там</p>
-          </div>
-        </div>
-      </article>
-      <div class="search">
-        <h3>Заинтересовались?</h3>
-        <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#" class="search-btn">Поиск гостиницы в Седоне</a>
-      </div>
-    </main>
-      <footer class="main-footer">
+      </main>
+      <div class="map">
         <div class="form">
           <form action="#" method="post">
             <div class="form-lane">
-              <label for="datacheckin">Дата заезда:<label>
+              <label for="datacheckin">Дата заезда:</label>
               <input type="text" name="datacheckin" id="datacheckin" value="24 апреля 2016">
             </div>
             <div class="form-lane">
-              <label for="datacheckout">Дата выезда:<label>
+              <label for="datacheckout">Дата выезда:</label>
               <input type="text" name="datacheckout" id="datacheckout" value="4 июля 2016">
             </div>
-            <div class="form-lane">
+            <div class="form-line">
               <label for="adult">Взрослые </label>
               <input type="text" name="adult" id="adult" value="2">
               <label for="child">Дети </label>
               <input type="text" name="child" id="child" value="0"><!--как сделать пробел между ними не очень понятно-->
             </div>
             <button class="btn" type="submit">Найти</button>
+          </form>
         </div>
-        <div class="map">
-          <img src="map.png" width="" height="" alt="Карта">
-        </div>
-        <div class="footer-row">
-          <div class="footer-tag">
-            <a href="#" class="hashtag">#Visitsedona</a>
+        <footer class="main-footer">
+          <div class="footer-row">
+            <div class="footer-tag">
+              <a href="#" class="hashtag">#Visitsedona</a>
+            </div>
+            <div class="footer-social">
+              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </div>
+            <div class="footer-copyright">
+              Website by
+              <a class="btn" href="https://htmlacademy.ru">
+                <img src="img/htmlacademy.png" width="" height="" alt="htmlacademy">
+              </a>
+            </div>
           </div>
-          <div class="footer-social">
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          </div>
-          <div class="footer-copyright">
-            Website by
-            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-          </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
