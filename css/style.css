@@ -1,6 +1,6 @@
-* {
+/* {
   outline: 1px solid red;
-}
+}*/
 body {
   font-family: "PT sans",sans-serif;
   font-size: 14px;
@@ -190,7 +190,7 @@ float: left;
   margin-top: 30px
 }  /*Не выравнивается кнопка, vertical-align не работает*/
 .content {
-  margin-bottom: -25px; /*как их совместить без этого маргина не понятно*/
+  margin-bottom: -25px;
 }
 .map {
   background-image: url("../img/map.jpg");
@@ -272,6 +272,173 @@ label {
   margin-top: 25px;
 }
 
+/*F I L T E R S*/
+.filters-row {
+  width: 1060px;
+  height: 177px;
+  background-image: url("../img/filterbackground.jpg"); /* не вытягивается на полный размер, остается незекрытый кусок*/
+  background-repeat: no-repeat;
+  padding: 20px 70px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.filters-options {
+  width: 180px;
+  float:left;
+}
+
+.price {
+  width: 327px;
+  float:right;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.enter-price {
+  border: 2px solid #ffffff;
+  text-align: center;
+  height: 35px;
+  width: 155px;
+  float:right;
+}
+.enter-price input {
+  width: 55px;
+  height: 20px;
+}
+.enter-price:last-child {
+  margin-left: 2px;
+}
+.enter-price label {
+  text-align: center;
+}
+.scroll {
+  width: 310px;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.show-button {
+  width: 133px;
+  height: 32px;
+  text-align: center;
+  border: 2px solid #ffffff;
+}
+.results-row {
+  font-size: 0;
+  height: 26px;
+  padding: 30px 70px;
+  text-align: left;
+}
+.sort-list {
+font-size: 0;
+display: inline-block;
+width: 300px;
+margin-left: 30px;
+text-align: center; /*почему li и .sort находится на разных уровнях и не дает себя центрировать?*/
+}
+.search-results {
+font-size: 21px;
+font-weight: bold;
+display: inline-block;
+}
+.sort {
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 50px;
+}
+.arrow {
+  text-align: center;
+  padding-top: 10px;
+  float:right;
+  width: 65px;
+  height: 40px;
+}
+.sort-list ul {
+  width: 500px;
+  background-color: red;
+}
+.sort-list li {
+margin-right: 20px;
+display: inline-block;
+}
+.hotel {
+  height: 100px;
+  border-top: 1px solid #e5e5e5;
+  padding: 25px 72px;
+}
+.hotel:last-child {   /*почему не работает нижняя граница? */
+  border-bottom: 1px solid #e5e5e5;
+}
+.hotel-image {
+  float:left;
+}
+.hotel-content {
+  width:300px;
+  height:95px;
+  float:left;
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+.hotel-content h2 {
+  margin: 0;
+  margin-bottom: 14px;
+}
+.aside {
+  text-align: center;
+  float:right;
+  width:120px;
+  height: 95px;
+}
+.rating {
+width: 120px;
+height: 27px;
+margin-top: 47px;
+background-color: #e5e5e5;
+}
+.stars {
+  text-align: right;
+}
+.details {
+  font-size: 14px;
+  text-transform: inherit;
+  float:left;
+  width: 130px;
+  height: 60px;
+}
+.booking {
+  font-size: 14px;
+  text-transform: inherit;
+  margin-left: 6px;
+  float:left;
+  width: 142px;
+  height: 60px;
+}
+
+.btn-blue {
+  font-size: 14px;
+  text-decoration: none;
+  width: 76px;
+  height: 11px;
+  color: white;
+  background-color: #81b3d2;
+  padding: 8px 17px;
+  font-weight: bold;
+}
+.btn-brown {
+  font-size: 14px;
+  text-decoration: none;
+  width: 108px;
+  height: 11px;
+  color: #ffffff;
+  background-color: #766357;
+  padding: 8px 17px;
+  font-weight: bold;
+}
+.hotel-description {
+  margin-bottom: 10px;
+}
+
 /* F O O T E R */
 
 .main-footer {
@@ -281,7 +448,6 @@ label {
   text-transform: uppercase;
   color: black;
   height: 120px;
-  background-color: red;
 }
 .footer-tag {
   text-align: center;
@@ -320,4 +486,3 @@ label {
   background-repeat: no-repeat;
   background-position: 68% 50%;
 }
-/*С ФУТЕРОМ ПРОБЛЕМЫ,ДА СО МНОГИМ ПРОБЛЕМЫ В ОБЩЕМ!*/
