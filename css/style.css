@@ -1,26 +1,323 @@
+* {
+  outline: 1px solid red;
+}
 body {
   font-family: "PT sans",sans-serif;
-  font-size: 21px;
+  font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   color:#000000;
+  padding: 0;
+  margin: 0;
 }
-h1 {
+.wrapper {
+position: relative;
+width: 1200px;
+margin: 0 auto;
+}
+
+/* З А Г О Л О В К И */
+
+.title {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  text-transform: uppercase;
 }
-h2 {
-  font-size: 21px;
-  line-height: 21px;
+.reason-title {
+  font-size: 14px;
+  line-height: 26px;
   font-weight: bold;
 }
-p {
+.question {
+  font-size: 30px;
+  line-height: 24px;
+}
+.reason-description {
   font-size: 14px;
   line-height: 21px;
   color:#333333;
+  text-transform: uppercase;
 }
+.reason-date {
+  line-height: 24px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*H E A D E R*/
+
+.main-header {
+  position: relative;
+  height: 56px;
+  font-size: 0;
+  width: 1200px;
+}
+li a {
+  font-size: 14px;
+  color: #000000;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.logo {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+ul {
+  padding: 0;
+}
+li:nth-child(2) {
+  margin-right: 20%;
+}
+.navigation-item {
+  box-sizing: border-box;
+  display:inline-block;
+  text-align: center;
+  width: 20%;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  height: 56px;
+  vertical-align: middle; /* почему не выравнивается по центру?*/
+}
+
+/*P R O M O*/
+
 .promo {
-  background-image: url ("img/bg-photo-index.jpg");/*почему не работает изображение?*/
-  background-color:black;
+  background-image: url("../img/bg-photo-index.jpg");
+  background-repeat:no-repeat;
+  height:600px;
+  padding-top: 76px;
 }
+.promo-image img {
+  display: block;
+  margin: 0 auto;
+}
+article {
+  text-align: center;
+}
+.header-title {
+  display: inline-block;
+  height: 216px;
+  text-align: center;
+}
+.header-title h1 {
+  margin-top: 65px;
+  margin-bottom: 30px;
+  width: 636px;
+  height: 50px;
+}
+.reason-row {
+  min-height:256px;
+  font-size: 0; /*появляется какое-то свободное место снизу,не понятно откуда оно?*/
+  margin: 0;
+  padding: 0;
+}
+.reason-row-icon {
+height: 330px;
+font-size: 0;
+}
+.reason {
+  display: inline-block;
+  width: 400px;
+  height: 256px;
+  text-align: center;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+.reason h2 {
+  font-size: 21px;  /*почему если применить размер только к .reason - h2 не меняет внещний вид? приходится писать отдельно*/
+}
+.reason-image {
+  float: right; /*пришлось сделать новый класс для второй картинки,чтобы зафлоатить ее влево,как по-другому сделать?*/
+}
+.reason-icon--house {
+  display:inline-block;
+  background-image: url("../img/reason-icon--house.png");
+  background-repeat:no-repeat;
+  background-position: 50% 10%;
+  text-align:center;
+  height: 330px;
+}
+.reason-icon--food {
+  display:inline-block;
+  background-image: url("../img/reason-icon--food.png");
+  background-repeat:no-repeat;
+  background-position: 50% 10%;
+  text-align:center;
+  height: 330px;
+  }
+.reason-icon--souvenirs {
+  display:inline-block;
+  background-image: url("../img/reason-icon--souvenirs.png");
+  background-repeat:no-repeat;
+  background-position: 50% 10%;
+  text-align:center;
+  height: 330px;
+}
+.image-right {
+  float:left;
+}
+.reason-row--grey {
+  text-align: left;
+  font-size: 0;
+  height: 256px;
+}
+.reason-row--grey .reason {
+display: block;
+float: left;
+}
+
+/*S E A R C H*/
+
+.search {
+  display: block;
+  height: 241px;
+  text-align: center;
+  padding: 50px;
+}
+.search-btn {
+  display: inline-block;
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+  color: white;
+  margin-top: 30px
+}  /*Не выравнивается кнопка, vertical-align не работает*/
+.content {
+  margin-bottom: -25px; /*как их совместить без этого маргина не понятно*/
+}
+.map {
+  background-image: url("../img/map.jpg");
+  width: 1200px ;
+  height: 884px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ф О Р М А*/
+
+.form {
+  font-size: 0;
+  box-sizing: border-box;
+  position: absolute;
+  width: 568px;
+  height: 395px;
+  background-color: white;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 55px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.form-line {
+  height: 38px;
+  width: 100%;
+  margin-bottom: 29px;
+  font-size: 14px;
+}
+input[type=text] {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  font-weight: inherit;
+  width: 346px;
+  height: 38px;
+  float:right;
+}
+label {
+  margin-top: 8px; /*выровняли вручную, как сделать автоматически расскажи */
+  display: inline-block;
+  width: 110px;
+}
+.adult-data {
+  display: inline-block;
+}
+.child-data {
+  display: inline-block;
+}
+.data-numbers { /*пришлось сделать еще один див,чтобы разместить поле input и кнопки справа,как по-другому?*/
+  float: right;
+}
+.minus {
+  float:left;
+  width: 38px;
+  height: 38px;
+}
+#adult {
+  text-align: center;
+  float:left;
+  width: 38px;
+}
+.plus {
+  float:left;
+  width: 38px;
+  height: 38px;
+}
+#child {
+  text-align: center;
+  float:left;
+  width: 38px;
+}
+.btn-find {
+  background-color: #81b3d2;
+  width: 458px;
+  height: 58px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 25px;
+}
+
+/* F O O T E R */
+
+.main-footer {
+  height: 120px;
+}
+.footer-row{
+  text-transform: uppercase;
+  color: black;
+  height: 120px;
+  background-color: red;
+}
+.footer-tag {
+  text-align: center;
+  width: 400px;
+  height: 70px;
+  float: left;
+  padding-top: 50px;
+  text-decoration: none;
+}
+.footer-tag a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.footer-social {
+  text-align: center;
+  width: 400px;
+  padding-top: 36px;
+  height: 70px;
+  float: left;
+}
+.footer-social a {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+.footer-copyright {
+  text-align: left;;
+  width: 298px;
+  padding-top: 50px;
+  padding-left: 102px;
+  height: 70px;
+  float: right;
+  background-image:  url("../img/htmlacademy.png");
+  background-repeat: no-repeat;
+  background-position: 68% 50%;
+}
+/*С ФУТЕРОМ ПРОБЛЕМЫ,ДА СО МНОГИМ ПРОБЛЕМЫ В ОБЩЕМ!*/
